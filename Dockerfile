@@ -4,7 +4,7 @@ ARG cachePath=/tmp/npmcache
 
 RUN apk add --no-cache \
             --update \
-            mvn \
+            maven \
             nodejs \
             npm \
             openssh-client \
