@@ -21,6 +21,10 @@ pipeline {
                 sh 'docker push lmydla/maven-angular:latest'
                 sh 'docker logout'
             }
+
+            when {
+                branch 'master'
+            }
         }
     }
 }
